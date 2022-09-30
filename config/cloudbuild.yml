@@ -2,9 +2,9 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args:
       - build
-      - "--tag=gcr.io/yoyoichi-playground/cloud-run-jobs-node-hello:latest"
+      - "--tag=gcr.io/[USE_PROJECT_ID]/cloud-run-jobs-node-hello:latest"
       - "--file=config/Dockerfile"
       - .
 
 images:
-  - "gcr.io/yoyoichi-playground/cloud-run-jobs-node-hello:latest"
+  - "gcr.io/[USE_PROJECT_ID]/cloud-run-jobs-node-hello:latest"
